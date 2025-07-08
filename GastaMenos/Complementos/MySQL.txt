@@ -1,0 +1,24 @@
+CREATE DATABASE gastosdb;
+
+USE gastosdb;
+
+CREATE TABLE gastos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    casa DOUBLE,
+    seguros DOUBLE,
+    carro DOUBLE,
+    educacao DOUBLE,
+    internet DOUBLE,
+    saude DOUBLE,
+    cartao DOUBLE,
+    contaAgua DOUBLE,
+    contaLuz DOUBLE,
+    outros DOUBLE
+);
+
+CREATE TABLE mes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE,
+    gastos_id INT,
+    FOREIGN KEY (gastos_id) REFERENCES gastos(id)
+);
