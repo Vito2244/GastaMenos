@@ -1,2 +1,2 @@
 # GastaMenos
-Projeto Integrador do Progama Jovem Programador do Senac, do ano de 2025
+Projeto Integrador do Programa Jovem Programador do Senac, do ano de 2025
